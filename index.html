@@ -1,4 +1,4 @@
-<!headings-->
+<!--headings-->
 
 <h1>I am an h1</h1>
 
@@ -12,7 +12,7 @@
 
 <h6>I am an h6</h6>
 
-<!displaying text-->
+<!--displaying text-->
 
 <main>The main tag specifies the main content of a document</main>
 
@@ -26,7 +26,12 @@
 
 <b>brings to attention by making bold</b>
 
-<!compartmentalisation-->
+<!--Styling text-->
+
+<em>emphasizes text</em>
+<strong>highlights important text</strong>
+
+<!--compartmentalisation-->
 
 <div></div>
 <span></span>
@@ -40,7 +45,7 @@
     necessary
 </span>
 
-<!lists-->
+<!--lists-->
 
 <ul>
     <li>this is an unordered list</li>
@@ -50,11 +55,11 @@
     <li>ordered list</li>
 </ol>
 
-<!Images-->
+<!--Images-->
 
 <img src="url/path to image" alt="desription of image"/>
 
-<!a tag used to create hyperlinks-->
+<!--a tag used to create hyperlinks-->
 
 <a href="url you want hyperlink to go to"<what will print on the page></a>
     <p>Anchor elements need a destination address called a href attribute, and they 
@@ -69,7 +74,7 @@
     you want to internally link to.
 </p>
 
-<!Buttons-->
+<!--Buttons-->
 
 <button>This is a button</button>
 
@@ -77,7 +82,7 @@
 
 <button type="submit">This button submits the form</button>
 
-<!Semantic elements-->
+<!--Semantic elements-->
 
 <form></form>
 <article></article>
@@ -88,12 +93,13 @@
 <aside></aside>
 <footer></footer>
 <section></section>
+<summary></summary>
 
 <p>Semantic element clearly describes its meaning to both
     the browser and the developer
 </p>
 
-<!You can build a table using the table element--!
+<!-- You can build a table using the table element!-->
 
 <table> 
     <tr> 
@@ -114,4 +120,99 @@
         table cells which act as column or row headers 
         should use the (th) element 
     </p>
+
+    <!-- Pokemon Table -->
+
+    <table border ="1">
+        <thead>
+            <tr>
+                <th>Image</th>
+                <th>Name</th>
+                <th>Type</th>
+                <th>Evolves Into</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+            <td><img src="/home/aidan/Pictures/Pokemon1.png" height="150" width="150"></td>
+            <td>Bulbasaur</td>
+            <td>Grass/Poison</td>
+            <td><a href="https://pokemon.fandom.com/wiki/Ivysaur">Ivysaur</a></td>
+        </tr>
+        <tr>
+            <td><img src="/home/aidan/Pictures/Charmander-Pokemon.jpg" height="150" width="150" </td>
+        </td>
+            <td>Charmander</td>
+            <td>Fire</td>
+            <td><a href="https://pokemon.fandom.com/wiki/Charmeleon">Charmeleon</a></td>
+        </tr>
+        <tr>
+            <td><img src="/home/aidan/Pictures/pokemon-2.jpg" height="150" width="150" </td>
+        </td>
+        <td>Squirtle</td>
+        <td>Water</td>
+        <td><a href="https://www.pokemon.com/uk/pokedex/wartortle">Wartortle</a></td>
+    </tr>
+    </tbody>
+
+    <!-- Creating a form -->
+    <p>Forms allow users to enter data
+        form widgets should be paired with a label that 
+        describes their purpose. 
+        Forms are how we get input from a user. Main tags include: 
+        -the form tag
+        -input tag
+        -and label tag= important for accessibility- Labels' for attribute should match 
+        ID of the one it is related to. 
+        -within the form tag, there is action and method. Action is the url of 
+        where the data goes, and method is the type of http request (get or post). Get 
+        requests used when getting info, post used when want to 'post' date to server. 
+    </p>
+
+    <!-- input tag-->
+    <input type ="date">
+    <input type ="text">
+    <input type ="color">
+    <input type ="file">
+    <input type ="checkbox">
+
+    More info here: https://www.w3schools.com/tags/tag_input.asp
+    https://www.w3schools.com/html/html_form_input_types.asp
+    
+    <!-- Basic  login form --> 
+
+    <form>
+        <label for= "username">Username:</label>
+        <input type= "text" name = "username" id="username" placeholder="Username"
+        required>
+        <label for = "password">Password:</label>
+        <input type= "password" name="password" id="password" placeholder = "Password"
+        required>
+        <input type= "submit">
+
+    </form>
+
+    <!-- Dropdowns and radio buttons
+    Name attribute shows radio buttons are related. Giving them same name connects them-->
+    <p>Radio Button, select tag, text area tag</p>
+    <Input type="radio">
+    <Input type="checkbox">
+
+        <p>Do you prefer cats or dogs?</p>
+
+<form>
+<label for= "dogs">Dogs:</label>
+<input name="petChoice" id="dogs" type="radio" value="dogs">
+
+<label for="cats">Cats:</label>
+<input name="petChoice" id="cats" type="radio" value="cats">
+
+<select name="colour">
+	<option value= "blue">Blue</option>
+	<option value = "red">Red</option>
+	<option value = "green">Green</option>
+</select>
+
+<button>Go</button>
+</form>
 
